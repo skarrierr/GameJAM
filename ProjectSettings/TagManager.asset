@@ -4,67 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - Spittler
-  - Red_bullet
-  - PigeroYellow
-  - DoubleJump
-  - Slimos
-  - Pigero
-  - Ground
-  - SlimoRed
-  - PigeroGreen
-  - SpittlerProjectile
-  - Scenario
-  - ChargedBullet
-  - Yellow_bullet
-  - PigeroRed
-  - RedCont
-  - GreenCont
-  - Green_bullet
-  - BW_Bullet
-  - SlimoGreen
-  - Wall
-  - YellowCont
-  - SlimoYellow
-  - Tutorialmsg
-  - Floor
-=======
-  - Padle
-  - Ball
-  - Goal
-  - Wall
-  - Scoreboard
-  - Bullet
-  - Asteroid
-  - FINAL BOOS
-  - Scenario
-  - Slimos
-  - Ground
-  - Pigero
-  - Floor
-  - GreenCont
-  - SlimoGreen
-  - SlimoYellow
-  - PigeroGreen
-  - PigeroYellow
-  - PigeroRed
-  - DoubleJump
-  - ChargedBullet
-  - BulletTransform
-  - BW_Bullet
-  - Green_bullet
-  - Enemies
-  - YellowCont
-  - RedCont
-  - Spittler
-  - SpittlerProjectile
-  - Red_bullet
-  - Yellow_bullet
-  - Tutorialmsg
-  - SlimoRed
->>>>>>> 67efe2e138830ca4c6afa83e8b45ad311033cde9
-  - KingSlimo
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -72,15 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-<<<<<<< HEAD
-  - Suelo
   - 
   - 
-=======
-  - Ground
-  - enviroment
-  - enemies
->>>>>>> 67efe2e138830ca4c6afa83e8b45ad311033cde9
+  - 
   - 
   - 
   - 
@@ -107,25 +41,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: FX
-    uniqueID: 2803284575
-    locked: 0
-  - name: Background
-    uniqueID: 891129865
-    locked: 0
-  - name: Ground
-    uniqueID: 1714104543
-    locked: 0
-  - name: Items
-    uniqueID: 1979547845
-    locked: 0
-  - name: Enemies
-    uniqueID: 3065360751
-    locked: 0
-  - name: Player
-    uniqueID: 1796961929
-    locked: 0
-  - name: PauseMenu
-    uniqueID: 3063721637
     locked: 0

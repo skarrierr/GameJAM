@@ -11,14 +11,14 @@ public class PlayerControl : MonoBehaviour
     public BoxCollider2D Collider2;
     private Animator anim;
     public LayerMask CapaSuelo;
-    public GameObject Sprite_Desliz;
-    private SpriteRenderer sr;
+ 
+
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
+      
    
       anim = GetComponent<Animator>();
 
@@ -28,23 +28,27 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow) && IsGrounded())
         {
+            anim.SetBool("IsJumping", true);
             rb.AddForce(Vector2.up * fuerzasalto, ForceMode2D.Impulse);
         }
+        else
+        {
+            anim.SetBool("IsJumping", false);
+        }
+
         if (Input.GetKey(KeyCode.DownArrow))
         {   
             Collider.enabled = false;
             Collider2.enabled = true;
-            // anim.SetBool("Deslizarse", true); 
-            Sprite_Desliz.SetActive(true);
-            sr.enabled = false;
+            anim.SetBool("Deslizarse", true); 
+          
         }
         else
         {
             Collider.enabled = true;
             Collider2.enabled = false;
-            // anim.SetBool("Deslizarse", false);
-            Sprite_Desliz.SetActive(false);
-            sr.enabled = true;
+            anim.SetBool("Deslizarse", false);
+        
         }
     }
     private void FixedUpdate()

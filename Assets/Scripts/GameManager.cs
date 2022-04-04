@@ -10,8 +10,10 @@ public class GameManager : MonoBehaviour
 
     public int Score;
     public int Coin;
-
     public bool pillado; 
+
+
+   
 
     private void FixedUpdate()
     {
