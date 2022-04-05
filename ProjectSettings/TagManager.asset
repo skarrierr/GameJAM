@@ -10,6 +10,7 @@ TagManager:
   - Scenario
   - Ground
   - Profesor
+  - Objeto
   layers:
   - Default
   - TransparentFX

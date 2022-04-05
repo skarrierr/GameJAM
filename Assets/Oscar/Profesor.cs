@@ -12,6 +12,12 @@ public class Profesor : MonoBehaviour
     public float HP = 4;
     public float knockbackPower = 100;
     public float knockbackDuration = 1;
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     public void TakeDamage(float damage)
     {
@@ -48,6 +54,15 @@ public class Profesor : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("CreditsOscar");
+        }
+
+        if (col.gameObject.CompareTag("Objeto"))
+        {
+            anim.SetBool("Hostia", true);
+        }
+        else
+        {
+            anim.SetBool("Hostia", false);
         }
     }
         private void Patrullar()
