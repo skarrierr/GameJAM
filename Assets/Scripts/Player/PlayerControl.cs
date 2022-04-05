@@ -28,6 +28,7 @@ public class PlayerControl : MonoBehaviour
             GameStart = true;
             speed = 10;
             anim.SetBool("IsRunning", true);
+
         }
 
 
@@ -67,9 +68,9 @@ public class PlayerControl : MonoBehaviour
         return raycasthit.collider != null;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Obstacle")
+        if (collision.gameObject.tag == "Obstacle")
         {
             speed = 0;
             anim.SetBool("IsDeath", true);

@@ -7,16 +7,24 @@ public class SpawnObjects : MonoBehaviour
     public GameObject[] Objects;
 
     private float tiempo = 0;
-
+    public bool GameStart = false;
     private int RandomNumb;
+    public float bucle;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)){
+            GameStart = true;
+        }
+    }
     private void FixedUpdate()
     {
+        if (GameStart) { 
         tiempo += Time.deltaTime;
 
 
-        if (tiempo>=2)
-        {
+          if (tiempo>=bucle)
+          {
             RandomNumb = Random.Range(0,Objects.Length);
             for (int i = 0; i < Objects.Length; i++)
             {
@@ -26,6 +34,8 @@ public class SpawnObjects : MonoBehaviour
                 }
             }
             tiempo = 0;
+          }
         }
     }
 }
+    

@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: efa792062ff62f24b98a7a108a5617b3
+guid: 335124daeb6e8e944a7d64930a613703
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4775903113690407877
-    second: Puerta_Abierta_0
+      213: -8909987091062915374
+    second: Puerta_0
   - first:
-      213: 597639787443909529
-    second: Puerta_Abierta_1
+      213: -7747228335304461618
+    second: Puerta_1
   - first:
-      213: 7219419679143601379
-    second: Puerta_Abierta_2
+      213: 263546889747250665
+    second: Puerta_2
   - first:
-      213: -4192714327298086819
-    second: Puerta_Abierta_3
+      213: 7131687584790241893
+    second: Puerta_3
   - first:
-      213: 7950338566001871076
-    second: Puerta_Abierta_4
+      213: -3285834466948962405
+    second: Puerta_4
   - first:
-      213: -3340858728409180169
-    second: Puerta_Abierta_5
-  - first:
-      213: -7536649956838667796
-    second: Puerta_Abierta_6
-  - first:
-      213: 4518779433829941121
-    second: Puerta_Abierta_7
-  - first:
-      213: 2393330191142800947
-    second: Puerta_Abierta_8
+      213: -7513432335898988133
+    second: Puerta_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -73,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 96
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Puerta_Abierta_0
+      name: Puerta_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +123,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c3e23df39a674240800000000000000
-      internalID: 4775903113690407877
+      spriteID: 2def0e3a2fd595480800000000000000
+      internalID: -8909987091062915374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puerta_Abierta_1
+      name: Puerta_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2365820e05c7490800000000000000
+      internalID: -7747228335304461618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 128
-        height: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +165,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 993fb32683e3b4800800000000000000
-      internalID: 597639787443909529
+      spriteID: 9ed3b09ff7e48a300800000000000000
+      internalID: 263546889747250665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puerta_Abierta_2
+      name: Puerta_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5626c74b218d8f260800000000000000
+      internalID: 7131687584790241893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
-        width: 128
-        height: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e4a1d3b2f7803460800000000000000
-      internalID: 7219419679143601379
+      spriteID: b97a5ce16fe5662d0800000000000000
+      internalID: -3285834466948962405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puerta_Abierta_3
+      name: Puerta_5
       rect:
         serializedVersion: 2
-        x: 384
+        x: 320
         y: 0
-        width: 128
-        height: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,113 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d58e4b4888c70d5c0800000000000000
-      internalID: -4192714327298086819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puerta_Abierta_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e841a69dc6455e60800000000000000
-      internalID: 7950338566001871076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puerta_Abierta_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f75868efa2e2a1d0800000000000000
-      internalID: -3340858728409180169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puerta_Abierta_6
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce90b2e8bc0786790800000000000000
-      internalID: -7536649956838667796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puerta_Abierta_7
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18f36cb14fde5be30800000000000000
-      internalID: 4518779433829941121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puerta_Abierta_8
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33ec841e021d63120800000000000000
-      internalID: 2393330191142800947
+      spriteID: b91bece291deab790800000000000000
+      internalID: -7513432335898988133
       vertices: []
       indices: 
       edges: []

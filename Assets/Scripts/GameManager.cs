@@ -6,21 +6,35 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Text Scoretxt;
-    public Text Cointxt;
-
+    public Text start;
+    public GameObject logo;
+    public PlayerControl script;
     public int Score;
-    public int Coin;
-    public bool pillado; 
-
-
    
+    public bool pillado = true;
 
+    private void Start()
+    {
+        script = FindObjectOfType<PlayerControl>();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            logo.SetActive(false);
+               
+            start.text = "";
+        }
+    }
     private void FixedUpdate()
     {
-       if (!pillado){ 
-           Score++;
+        if (script.speed != 0)
+        {
+            Score++;
            Scoretxt.text = Score.ToString();
        }
     }
 }
+       
+
 

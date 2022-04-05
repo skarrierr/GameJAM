@@ -6,7 +6,7 @@ public class Objects : MonoBehaviour
 {
     private void Start()
     {
-        Destroy(this.gameObject, 2);
+        Destroy(this.gameObject, 5);
     }
 
 
