@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Slimos
+  - Floor
+  - Scenario
+  - Ground
+  - Profesor
   layers:
   - Default
   - TransparentFX

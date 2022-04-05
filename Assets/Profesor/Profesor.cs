@@ -45,13 +45,11 @@ public class Profesor : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-
         if (col.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("CreditsOscar");
         }
     }
-
         private void Patrullar()
     {
         if (MoveRight)
@@ -64,10 +62,5 @@ public class Profesor : MonoBehaviour
             transform.Translate(-2 * Time.deltaTime * walkSpeed, 0, 0);
             transform.localScale = new Vector2(-2, 2);
         }
-    }
-
-    private void Perseguir()
-    {
-
     }
 }
