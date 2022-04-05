@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Oscar.unity
     guid: 4e71246b60774f14a88f2815d206d9ef
   - enabled: 1
-    path: Assets/Scenes/CreditsOscar.unity
+    path: Assets/Scenes/GameOverOscar.unity
     guid: 122bf9668c1909f418b52acebf838fd5
   m_configObjects: {}
