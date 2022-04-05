@@ -7,12 +7,16 @@ public class Menu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Juego");
     }
 
-    public void Exit()
+    public void ToMenu()
     {
         SceneManager.LoadScene("MenuOscar");
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -53,17 +53,17 @@ public class Profesor : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("CreditsOscar");
+            SceneManager.LoadScene("MenuOscar");
         }
 
-        if (col.gameObject.CompareTag("Objeto"))
-        {
-            anim.SetBool("Hostia", true);
-        }
-        else
-        {
-            anim.SetBool("Hostia", false);
-        }
+        //if (col.gameObject.CompareTag("Objeto"))
+        //{
+        //    anim.SetBool("Hostia", true);
+        //}
+        //else
+        //{
+        //    anim.SetBool("Hostia", false);
+        //}
     }
         private void Patrullar()
     {
