@@ -11,21 +11,26 @@ public class PlayerControl : MonoBehaviour
     public BoxCollider2D Collider2;
     private Animator anim;
     public LayerMask CapaSuelo;
- 
+    public bool GameStart = false;
 
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-      
-   
-      anim = GetComponent<Animator>();
-
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space) && !GameStart)
+        {
+            GameStart = true;
+            speed = 10;
+            anim.SetBool("IsRunning", true);
+        }
+
+
         if (Input.GetKeyDown(KeyCode.UpArrow) && IsGrounded())
         {
             anim.SetBool("IsJumping", true);
@@ -61,6 +66,18 @@ public class PlayerControl : MonoBehaviour
         RaycastHit2D raycasthit = Physics2D.BoxCast(Collider.bounds.center, new Vector2(Collider.bounds.size.x, Collider.bounds.size.y), 0f, Vector2.down, 0.2f, CapaSuelo);
         return raycasthit.collider != null;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Obstacle")
+        {
+            speed = 0;
+            anim.SetBool("IsDeath", true);
+           
+            print("he muerto");
+        }
+    }
+
 
 }
 
