@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -76,7 +77,7 @@ public class PlayerControl : MonoBehaviour
             speed = 0;
             anim.SetBool("IsDeath", true);
             Idied = true;
-            
+            SceneManager.LoadScene("Menu");
         }
     }
 
