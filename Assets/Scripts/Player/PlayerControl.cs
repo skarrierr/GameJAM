@@ -12,6 +12,7 @@ public class PlayerControl : MonoBehaviour
     private Animator anim;
     public LayerMask CapaSuelo;
     public bool GameStart = false;
+    public bool Idied = false;
 
 
 
@@ -74,8 +75,8 @@ public class PlayerControl : MonoBehaviour
         {
             speed = 0;
             anim.SetBool("IsDeath", true);
-           
-            print("he muerto");
+            Idied = true;
+            
         }
     }
 

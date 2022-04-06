@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject logo;
     public PlayerControl script;
     public int Score;
+    public Text ScoreGameOver;
    
     public bool pillado = true;
 
@@ -32,6 +33,8 @@ public class GameManager : MonoBehaviour
         {
             Score++;
            Scoretxt.text = Score.ToString();
+
+            ScoreGameOver.text = "Score: " + Score;
        }
     }
 }
