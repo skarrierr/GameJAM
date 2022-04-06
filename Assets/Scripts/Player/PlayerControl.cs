@@ -14,8 +14,12 @@ public class PlayerControl : MonoBehaviour
     public LayerMask CapaSuelo;
     public bool GameStart = false;
     public bool Idied = false;
+    private SoundManager soundManager;
 
-
+    private void Awake()
+    {
+        soundManager = FindObjectOfType<SoundManager>();
+    }
 
     private void Start()
     {
@@ -32,7 +36,6 @@ public class PlayerControl : MonoBehaviour
             anim.SetBool("IsRunning", true);
 
         }
-
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && IsGrounded())
         {
@@ -74,6 +77,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
+            soundManager.Seleccion(2, 0.5f);
             speed = 0;
             anim.SetBool("IsDeath", true);
             Idied = true;
