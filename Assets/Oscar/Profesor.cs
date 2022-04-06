@@ -5,77 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class Profesor : MonoBehaviour
 {
-    public float walkSpeed;
-    [HideInInspector]
-    public bool mustPatrol;
-    public bool MoveRight;
-    public float HP = 4;
-    public float knockbackPower = 100;
-    public float knockbackDuration = 1;
+    public float speed;
     private Animator anim;
+    public bool GameStart = false;
 
-    private void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
-
-    public void TakeDamage(float damage)
-    {
-        HP -= damage;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        Patrullar();
-
-        if (HP <= 0)
+        if (Input.GetKeyDown(KeyCode.Space) && !GameStart)
         {
-            Destroy(gameObject);
+            GameStart = true;
+            speed = 5;
         }
-    }
-    private void OnTriggerEnter2D(Collider2D trig)
-    {
-        if (trig.gameObject.CompareTag("Ground"))
-        {
-            if (MoveRight)
-            {
-                MoveRight = false;
-            }
-            else
-            {
-                MoveRight = true;
-            }
-        }
+        transform.Translate(2 * Time.deltaTime * speed, 0, 0);
+        transform.localScale = new Vector2(2, 2);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("MenuOscar");
-        }
-
-        //if (col.gameObject.CompareTag("Objeto"))
-        //{
-        //    anim.SetBool("Hostia", true);
-        //}
-        //else
-        //{
-        //    anim.SetBool("Hostia", false);
-        //}
-    }
-        private void Patrullar()
-    {
-        if (MoveRight)
-        {
-            transform.Translate(2 * Time.deltaTime * walkSpeed, 0, 0);
-            transform.localScale = new Vector2(2, 2);
-        }
-        else
-        {
-            transform.Translate(-2 * Time.deltaTime * walkSpeed, 0, 0);
-            transform.localScale = new Vector2(-2, 2);
+            SceneManager.LoadScene("Menu");
         }
     }
 }
