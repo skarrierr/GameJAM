@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Profesor : MonoBehaviour
 {
     public float speed;
-    private Animator anim;
     public bool GameStart = false;
 
     void Update()
